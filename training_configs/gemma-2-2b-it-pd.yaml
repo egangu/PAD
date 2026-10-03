@@ -1,5 +1,5 @@
 # Model arguments
-model_name_or_path: ../huggingface/google/gemma-2-2b-it
+model_name_or_path: google/gemma-2-2b-it
 torch_dtype: null
 attn_implementation: eager
 

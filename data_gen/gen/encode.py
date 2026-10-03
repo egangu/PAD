@@ -9,7 +9,7 @@ from datasets import Dataset
 from tqdm import tqdm
 from trl.trainer.utils import pad
 
-from on_policy_data_gen.gen.common import process, tokenize_row
+from data_gen.gen.common import process, tokenize_row
 # from distill.utils import 
 
 

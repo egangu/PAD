@@ -16,12 +16,16 @@
 import logging
 import random
 import sys
+from pathlib import Path
 
 import torch
 import transformers
 import numpy as np
 from transformers import AutoModelForCausalLM, set_seed
-sys.path.append('/hpc2hdd/JH_DATA/share/zrao538/PrivateShareGroup/zrao538_NLPGroup/yggu/SimPO')
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from alignment import (
     DataArguments,

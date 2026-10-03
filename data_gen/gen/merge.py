@@ -49,6 +49,6 @@ def merge_pt_files(directory, pattern, output_file):
 # 使用示例
 merge_json_files('data/generated/ultrafeedback/gemma-2b-it/split_n5', 'split_*_prob.json', 'data/generated/ultrafeedback/gemma-2b-it/merged_prob.gemma.json')
 merge_json_files('data/generated/ultrafeedback/llama-3b-it/split_n5', 'split_*_prob.json', 'data/generated/ultrafeedback/llama-3b-it/merged_prob.llama.json')
-# merge_json_files('/hpc2hdd/JH_DATA/share/zrao538/PrivateShareGroup/zrao538_NLPGroup/yggu/SimPO/data/ultrafeedback/2b/s4', 'split_*_prob_sl.json', 'merged_prob_sl.json')
-# merge_json_files('/hpc2hdd/JH_DATA/share/zrao538/PrivateShareGroup/zrao538_NLPGroup/yggu/SimPO/data/ultrafeedback/2b/s4', 'split_*_prob_sl_2b_vllm.json', 'merged_prob_sl_2b_vllm.json')
-# merge_pt_files('/hpc2hdd/JH_DATA/share/zrao538/PrivateShareGroup/zrao538_NLPGroup/yggu/SimPO/data/ultrafeedback/2b/s4', 'split_*.pt', 'merged_tensor.pt')
+# merge_json_files('data/split-runs', 'split_*_prob_sl.json', 'merged_prob_sl.json')
+# merge_json_files('data/split-runs', 'split_*_prob_sl_2b_vllm.json', 'merged_prob_sl_2b_vllm.json')
+# merge_pt_files('data/split-runs', 'split_*.pt', 'merged_tensor.pt')
